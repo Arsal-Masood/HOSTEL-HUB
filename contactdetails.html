@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Details</title>
+  <style>
+    /* General Styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 15px;
+    }
+
+    /* Header Styling */
+    header {
+      background: linear-gradient(to right, #8b5a2b,  #8b5a2b);
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    /* Contact Cards */
+    .contact-card {
+      background: #fff;
+      border: 1px solid #e6e6e6;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 15px 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 150px; /* Ensure all boxes have equal height */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .contact-card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid  #8b5a2b;
+    }
+
+    .contact-card .details {
+      flex: 1;
+    }
+
+    .contact-card h2 {
+      margin: 0;
+      font-size: 1.8rem;
+      color:  #8b5a2b;
+    }
+
+    .contact-card p {
+      margin: 5px 0;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+      background-color: #8b5a2b;
+      color: white;
+      border-top: 5px solid  #8b5a2b;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>Contact Details</h1>
+    </header>
+
+    <!-- Contact Details -->
+    <section>
+      <!-- Warden -->
+      <div class="contact-card">
+        <div class="details">
+          <h2>Warden</h2>
+          <p><strong>Name:</strong> Dr. Jitender</p>
+          <p><strong>Phone:</strong> +91 9876xxxxxx</p>
+          <p><strong>Email:</strong> warden@haryabhatthostel.com</p>
+        </div>
+        <img src="man.jpg" alt="Warden">
+      </div>
+
+      <!-- Student Secretary -->
+      <div class="contact-card">
+        <div class="details">
+          <h2>Student Secretary</h2>
+          <p><strong>Name:</strong> Akshit Goel</p>
+          <p><strong>Phone:</strong> +91 27382xxxxx</p>
+          <p><strong>Email:</strong> akshitg@gmail.com</p>
+        </div>
+        <img src="man.jpg" alt="Student Secretary">
+      </div>
+
+      <!-- Security -->
+      <div class="contact-card">
+        <div class="details">
+          <h2>Security</h2>
+          <p><strong>Name:</strong> Mr. Shailesh</p>
+          <p><strong>Phone:</strong> +91 27382xxxxx</p>
+          <p><strong>Emergency:</strong> +91 9876xxxxxx</p>
+        </div>
+      </div>
+
+      <!-- Maintenance -->
+      <div class="contact-card">
+        <div class="details">
+          <h2>Maintenance</h2>
+          <p><strong>Electrician:</strong> +91 99xxxxxxxx</p>
+          <p><strong>Plumber:</strong> +91 55667xxxxx</p>
+          <p><strong>General Support:</strong> +91 77889xxxxx</p>
+        </div>
+      </div>
+
+      <!-- Hostel Office -->
+      <div class="contact-card">
+        <div class="details">
+          <h2>Hostel Office</h2>
+          <p><strong>Phone:</strong> +91 99887xxxxx</p>
+          <p><strong>Email:</strong> office@aryabhatt.com</p>
+          <p><strong>Working Hours:</strong> 9:00 AM - 5:00 PM</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; KIET Hostel Aryabhatta</p>
+  </footer>
+</body>
+</html>

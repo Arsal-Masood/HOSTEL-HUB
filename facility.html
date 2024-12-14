@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Hostel Facilities</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #e4c59c, #e4c59c);
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background: rgb(139, 89, 43);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 2em;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        /* Container Styles */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 40px 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Facility Card Styles */
+        .facility {
+            display: flex;
+            flex-direction: column;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .facility:hover {
+            transform: scale(1.05);
+        }
+
+        .facility img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .facility-details {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .facility-details h3 {
+            margin: 0 0 10px;
+            font-size: 1.4em;
+            color: #99581a;
+        }
+
+        .facility-details p {
+            margin: 0;
+            font-size: 1em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: rgb(139, 89, 43);
+            color: white;
+            font-size: 1em;
+            margin-top: 30px;
+        }
+
+        /* Responsive Design for Medium Screens */
+        @media (max-width: 1024px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+                padding: 20px 40px;
+            }
+        }
+
+        /* Responsive Design for Small Screens */
+        @media (max-width: 768px) {
+            header {
+                font-size: 1.5em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+
+            footer {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Aryabhatta Hostel</h1>
+        <p>Your home away from home!</p>
+    </header>
+
+    <div class="container">
+        <!-- Facility 1 -->
+        <div class="facility">
+            <img src="ROOMS.jpg" alt="Clean Rooms">
+            <div class="facility-details">
+                <h3>Clean and Comfortable Rooms</h3>
+                <p>Our rooms are spacious, well-lit, and equipped with cozy beds, personal lockers, and ample storage space.</p>
+            </div>
+        </div>
+
+        <!-- Facility 2 -->
+       
+        <div class="facility">
+            <a href="menu.html">  <img src="MEAL.jpg" alt="Dining Facilities"></a>
+            <div class="facility-details">
+                <h3>Dining Facilities</h3>
+                <p>Enjoy nutritious and hygienic meals in our in-house mess or prepare your own meals in the shared pantry.</p>
+            </div>
+        </div>
+        
+
+        <!-- Facility 3 -->
+        
+        <div class="facility">
+            <a href="events.html" >   <img src="EVE.jpg" alt="events"></a>
+            <div class="facility-details">
+                <h3>Events & Activities</h3>
+                <p>Creating unforgettable moments through exciting events and engaging activities.</p>
+            </div>
+        </div>
+        
+
+        <!-- Facility 4 -->
+        
+        <div class="facility">
+            <img src="GYM.jpg" alt="Recreational Facilities">
+            <div class="facility-details">
+                <h3>Recreational Facilities</h3>
+                <p>Unwind with our indoor games, gym, and common room activities, or relax in the outdoor spaces.</p>
+            </div>
+        </div>
+
+        <!-- Facility 5 -->
+       
+        <div class="facility">
+            <a href="contactdetails.html" >    <img src="SECURITY.jpg" alt="Security"></a>
+            <div class="facility-details">
+                <h3>Security & STAFF</h3>
+                <p>Guardians of safety and services, ensuring a secure and welcoming environment for all.</p>
+            </div>
+        </div>
+        
+
+        <!-- Facility 6 -->
+        
+        <div class="facility">
+            <a href="complaintpage.html" >  <img src="COMPLAINT.jpg" alt="Complaint Services"></a>
+            <div class="facility-details">
+                <h3>Complaint Box</h3>
+                <p>Your Voice Matters: Share Your Concerns Here!, We are here to help you</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Aryabhatta Hostel. All rights reserved.</p>
+    </footer>
+</body>
+</html>

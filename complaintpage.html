@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complaint Box</title>
+  <style>
+    /* General Styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Header Styling */
+    header {
+      background: linear-gradient(to right, #8b5a2b,  #8b5a2b);
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      border-radius: 10px 10px 0 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+
+    /* Form Styling */
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      font-size: 1rem;
+      margin-bottom: 5px;
+      display: block;
+      color: #333;
+    }
+
+    select, input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    select:focus, input:focus, textarea:focus {
+      outline: none;
+      border-color:  #8b5a2b;
+      box-shadow: 0 0 5px rgba(255, 103, 0, 0.5);
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .submit-btn {
+      background-color:  #8b5a2b;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background-color: #d45906;
+    }
+
+    /* Success Message */
+    .success-message {
+      margin-top: 15px;
+      padding: 20px;
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      text-align: center;
+      display: none; /* Initially hidden */
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+      background-color:  #8b5a2b;
+      color: white;
+      border-top: 5px solid  #bd7a3b;
+      border-radius: 0 0 10px 10px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>Complaint Box</h1>
+    </header>
+
+    <!-- Complaint Form -->
+    <form id="complaint-form">
+      <!-- Complaint Type -->
+      <label for="complaint-type">Select Complaint Type:</label>
+      <select id="complaint-type" name="complaint-type" required>
+        <option value="" disabled selected>-- Select --</option>
+        <option value="maintenance">Maintenance</option>
+        <option value="security">Security</option>
+        <option value="food">Food</option>
+        <option value="other">Other</option>
+      </select>
+
+      <!-- Student Information -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="rollno">University Roll Number:</label>
+      <input type="text" id="rollno" name="rollno" placeholder="Enter your roll number" required>
+
+      <!-- Complaint Description -->
+      <label for="complaint-description">Complaint Description:</label>
+      <textarea id="complaint-description" name="complaint-description" rows="6" placeholder="Write your complaint here..." required></textarea>
+
+      <!-- Submit Button -->
+      <button type="submit" class="submit-btn">Submit Complaint</button>
+    </form>
+
+    <!-- Success Message -->
+    <div class="success-message" id="success-message">
+      Your complaint has been successfully submitted. We will look into it and get back to you shortly.
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 KIET Hostel Aryabhatta</p>
+  </footer>
+
+  <script>
+    // Handle form submission
+    const form = document.getElementById('complaint-form');
+    const successMessage = document.getElementById('success-message');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Hide the form and show the success message
+      form.style.display = 'none';
+      successMessage.style.display = 'block';
+    });
+  </script>
+</body>
+</html>
